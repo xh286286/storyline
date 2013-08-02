@@ -11,7 +11,7 @@
   
 "topic":[
   {"name": "asdf",
-   "begin":"10, 
+   "begin":"10“, 
    "end":"20", 
    "participants":[ 0,1,2,3]
    },
