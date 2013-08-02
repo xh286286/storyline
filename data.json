@@ -11,23 +11,23 @@
   
 "topic":[
   {"name": "asdf",
-   "begin":"10“, 
+   "begin":"10", 
    "end":"20", 
    "participants":[ 0,1,2,3]
    },
   {"name": "asdf",
-   "begin":"50, 
+   "begin":"50", 
    "end":"60", 
    "participants":[ 6,4,2,3]
    },
   {"name": "asdf",
-   "begin":"10, 
-   "end":"20", 
+   "begin":"70", 
+   "end":"80", 
    "participants":[ 4,1]
    },
   {"name": "asdf",
-   "begin":"10, 
-   "end":"20", 
+   "begin":"80", 
+   "end":"90", 
    "participants":[ 2,3]
    }
    ]
