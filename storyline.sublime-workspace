@@ -11,7 +11,7 @@
 			"file": "storyline.js",
 			"settings":
 			{
-				"buffer_size": 2393,
+				"buffer_size": 2468,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +55,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 153.0
 	},
 	"distraction_free":
 	{
@@ -68,6 +68,7 @@
 	},
 	"file_history":
 	[
+		"/D/project/algorithm/topcoder/main.cpp",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/D/用户目录/Documents/temp/storyline.js"
 	],
@@ -87,6 +88,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"function",
+			"slice",
+			"slice()",
 			"m"
 		],
 		"highlight": true,
@@ -105,6 +109,7 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -112,15 +117,15 @@
 					"file": "storyline.js",
 					"settings":
 					{
-						"buffer_size": 2393,
+						"buffer_size": 2468,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								2130,
+								2130
 							]
 						],
 						"settings":
@@ -130,7 +135,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1606.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -175,8 +180,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								5455,
+								5455
 							]
 						],
 						"settings":
@@ -186,7 +191,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3708.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -203,8 +208,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1149,
+								1151
 							]
 						],
 						"settings":
@@ -214,7 +219,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 990.0,
+						"translation.y": 839.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -253,6 +258,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 73.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -271,6 +280,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/D/project/algorithm/topcoder/topcoder.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

@@ -50,10 +50,6 @@ d3.storyline = function() {
     computerLinks();
     computeSlotDepths(iterations);
     scaleComponents();
-    //computeNodeValues();
-    //computeNodeBreadths();
-    //computeNodeDepths(iterations);
-    //computeLinkDepths();
     return storyline;
   };
   
@@ -90,12 +86,18 @@ d3.storyline = function() {
     return link;
   };
   function intialTopics() { 
-  	var i;
+  	var i,j;
     	topics.sort(comp1);
 	  	function comp1(a,b) { return a.begin - b.begin; }
 	  	var m = topics.length;
 	  	for ( i = 0; i<m; i++) {
-	  	  	
+        var temp = topics[i].participants;
+        for ( j = 0; j< temp.length; j++) {
+            var index = temp[j];
+            temp[j] = {};
+            temp[j].index = index;
+            temp[j].person = people[index];
+        }	  	  	
 	  	}
   }
 	function intialLinks() {
@@ -103,13 +105,14 @@ d3.storyline = function() {
     			n = people.length;
     	var m = topics.length;
     	links = [];
-    	for (i = 0; i<n; i++) {
-    		var last = people[i];
- 				for (int j=0; j<m; j++) {
- 					
- 				}	   		
-    		
-    	}
-    	
+      var lastEnd = people.slice();
+      for ( i = 0; i<m; i++) {
+        var temp = topics[i].participants;
+        for (j = 0; j<temp.length; j++) {
+          
+        }
+      }
   }
-} 
+
+
+}; 
