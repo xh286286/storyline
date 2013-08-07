@@ -5,7 +5,8 @@ d3.storyline = function() {
       size = [300, 300],
       people = [],
       topics = [],
-      links = []
+      links = [],
+      slots = []
       ;
 
   storyline.size = function(_) {
@@ -90,6 +91,7 @@ d3.storyline = function() {
     	topics.sort(comp1);
 	  	function comp1(a,b) { return a.begin - b.begin; }
 	  	var m = topics.length;
+      int totslots = 0;
 	  	for ( i = 0; i<m; i++) {
         var temp = topics[i].participants;
         for ( j = 0; j< temp.length; j++) {
@@ -98,21 +100,61 @@ d3.storyline = function() {
             temp[j].index = index;
             temp[j].person = people[index];
         }	  	  	
-	  	}
-  }
-	function intialLinks() {
-    	var i, j,
-    			n = people.length;
-    	var m = topics.length;
-    	links = [];
-      var lastEnd = people.slice();
-      for ( i = 0; i<m; i++) {
-        var temp = topics[i].participants;
-        for (j = 0; j<temp.length; j++) {
-          
+        var s = topics[i].slot;
+        if (s+1 > totslots) totslots = s+1;
+        if (slots[s] === undefined) {
+          slots[s] = {};
+          slots[s].height = temp.length;
         }
+        else {
+          if (temp.length > slots[s].length) slots[s].length = temp.length;
+        }
+	  	}
+      for (i=0; i<totslots; i++) {
+        if (slots[s] === undefined) {
+          slots[s] = {"length":0};
       }
   }
+	function intialLinks() {
+  	var i, j,
+  			n = people.length;
+  	var m = topics.length;
+  	links = [];
+    var lastEnd = people.slice();
+    for ( i = 0; i<m; i++) {
+      var temp = topics[i].participants;
+      for (j = 0; j<temp.length; j++) {
+        var p = temp[j].index;
+        var newlink = {};
+        newlink.left = lastEnd[p];
+        lastEnd.right = newlink;
+        temp[j].left= newlink;
+        newlink.right = temp[j];
+        links.push(newlink);
+        lastEnd[p] = temp[j];
+      }
+    }
+    for ( i =0; i<n; i++) {
+      var newlink = {};
+      newlink.left = lastEnd[p];
+      lastEnd.right = newlink;
+      people[i].left= newlink;
+      newlink.right = people[i];
+      links.push(newlink);
+    }
+  }
+  function computeTopicPeopleOrder() {
+    var i, j,
+        n = people.length;
+    var m = topics.length;
+    order = [];
+    for (i=0; i<n; i++) {
+      order[i] = {};
+      order[i].a = 0;
+      order[i].b = i;
+    }
+    for (i =0 ; i<m; i++) {
 
-
+    }    
+  }
 }; 
