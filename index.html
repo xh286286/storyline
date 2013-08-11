@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Sankey Diagram</title>
+<title>storyline</title>
+<head>
 <style>
 
-@import url(../style.css?20120521);
+
 
 #chart {
   height: 500px;
 }
 
-.node rect {
+.topic rect {
   cursor: move;
   fill-opacity: .9;
   shape-rendering: crispEdges;
 }
 
-.node text {
+.topic text {
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
 }
@@ -31,97 +32,132 @@
 }
 
 </style>
+
+</head>
+
 <body>
 
 <header>
-  <aside>May 22, 2012</aside>
-  <a href="../" rel="author">Mike Bostock</a>
 </header>
 
-<h1>Sankey Diagrams</h1>
+<h1>storyline</h1>
 
 <div id="chart"> </div>
+<button click = "work"> click</button>
 
+<script src="d3.js"></script>
 
-<script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>
-<script src="sankey.js"></script>
-<script>
+<script src = "storyline.js">
+ </script>
+ <script >
 
+var storydata = {"people":[
+  {"name":"test1"},
+  {"name":"test2"},
+  {"name":"test3"},
+  {"name":"test4"},
+  {"name":"test4"},
+  {"name":"test16"},
+  {"name":"test71"},
+  {"name":"test81"}
+  ],
+  
+"topics":[
+  {"name": "asdf",
+   "begin":"10", 
+   "end":"20", 
+   "slot": 0,
+   "participants":[ 0,1,2,3]
+   },
+  {"name": "asdf",
+   "begin":"50", 
+   "end":"60", 
+   "slot": 1,
+   "participants":[ 6,4,2,3]
+   },
+  {"name": "asdf",
+   "begin":"70", 
+   "end":"80", 
+   "slot": 2,
+   "participants":[ 4,1]
+   },
+  {"name": "asdf",
+   "begin":"80", 
+   "end":"90", 
+   "slot": 3,
+   "participants":[ 2,3]
+   }
+   ]
+};
+
+ </script>
+<script> 
+alert("asdf");
 var margin = {top: 1, right: 1, bottom: 6, left: 1},
     width = 460 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
-
-var formatNumber = d3.format(",.0f"),
-    format = function(d) { return formatNumber(d) + " TWh"; },
-    color = d3.scale.category20();
-
 var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var sankey = d3.sankey()
-    .nodeWidth(15)
-    .nodePadding(10)
+var storyline = d3.storyline()
     .size([width, height]);
 
-var path = sankey.link();
+var path = storyline.link();   
 
-d3.json("energy.json", function(energy) {
+  var story = storydata;
+  storyline
+      .people(story.people)
+      .topics(story.topics)
+      .layout();
 
-  sankey
-      .nodes(energy.nodes)
-      .links(energy.links)
-      .layout(32);
+var vlink = storyline.visuallinks();
 
-  var link = svg.append("g").selectAll(".link")
-      .data(energy.links)
+var link = svg.append("g").selectAll(".link")
+      .data(vlink)
     .enter().append("path")
       .attr("class", "link")
       .attr("d", path)
-      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; });
+      .style("stroke-width", function(d) { return Math.max(1, d.left.dy); })
+      .sort(function(a, b) { return b.left.dy - a.left.dy; });
 
-  link.append("title")
-      .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+link. append("title")
+      .text(function(d) { return d.person.name;});
 
-  var node = svg.append("g").selectAll(".node")
-      .data(energy.nodes)
+
+  var topic = svg.append("g").selectAll(".topic")
+      .data(story.topics)
     .enter().append("g")
-      .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-    .call(d3.behavior.drag()
-      .origin(function(d) { return d; })
-      .on("dragstart", function() { this.parentNode.appendChild(this); })
-      .on("drag", dragmove));
+      .attr("class", "topic")
+      .attr("transform", function(d) { return "translate(" + d.leftx + "," + d.y + ")"; });
 
-  node.append("rect")
+  topic.append("rect")
       .attr("height", function(d) { return d.dy; })
-      .attr("width", sankey.nodeWidth())
-      .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
-      .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+      .attr("width", function(d) { return d.rightx - d.leftx;})
+      .style("fill", "gray")
+      .style("stroke", "gray")
     .append("title")
-      .text(function(d) { return d.name + "\n" + format(d.value); });
+      .text(function(d) { return d.name;} );
 
-  node.append("text")
-      .attr("x", -6)
-      .attr("y", function(d) { return d.dy / 2; })
-      .attr("dy", ".35em")
-      .attr("text-anchor", "end")
-      .attr("transform", null)
-      .text(function(d) { return d.name; })
-    .filter(function(d) { return d.x < width / 2; })
-      .attr("x", 6 + sankey.nodeWidth())
-      .attr("text-anchor", "start");
+  persons = topic.selectAll(".person")
+            .data(function(d) { return d.participants;})
+            .enter().append("g")
+            .attr("class", "person")
+            .attr("transform", function(d) { return "translate( 0," + d.ry + ")"; })
+            .append("rect")
+            .attr("height", function(d) { return d.dy; })
+            .attr("width", function(d) { return d.rightx - d.leftx;})
+            .style("fill", function(d) {return d.person.color;})
+            .style("stroke",  function(d) {return d3.rgb(d.person.color).darker(2);});
+  persons.append("title")
+          .text(function(d){return d.person.name;});
+ 
+  
 
-  function dragmove(d) {
-    d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
-    sankey.relayout();
-    link.attr("d", path);
-  }
-});
 
 </script>
+
 </body>
 </html>

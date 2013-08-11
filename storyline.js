@@ -1,7 +1,10 @@
 d3.storyline = function() {
   var storyline = {},
       personHeight = 24,
+      phPer = 0.6,
+      phPad = (1-phPer) /2;
       personPadding = 4,
+      channelHeight = 10,
       size = [300, 300],
       vSize = [1,1,1],
       people = [],
@@ -40,7 +43,7 @@ d3.storyline = function() {
     return storyline;
   };
 
-  storyline.links = function() {
+  storyline.visuallinks = function() {
     return links;
   };
 
@@ -66,13 +69,13 @@ d3.storyline = function() {
     var curvature = .5;
 
     function link(d) {
-      var x0 = d.source.x + d.source.dx,
-          x1 = d.target.x,
+      var x0 = d.left.rightx,
+          x1 = d.right.leftx,
           xi = d3.interpolateNumber(x0, x1),
           x2 = xi(curvature),
           x3 = xi(1 - curvature),
-          y0 = d.source.y + d.sy + d.dy / 2,
-          y1 = d.target.y + d.ty + d.dy / 2;
+          y0 = d.left.y + d.left.dy / 2,
+          y1 = d.right.y + d.right.dy / 2;
       return "M" + x0 + "," + y0 
            + "C" + x2 + "," + y0
            + " " + x3 + "," + y1
@@ -104,7 +107,7 @@ d3.storyline = function() {
       vSize[1] = topics[0].end;
     }
   	var m = topics.length;
-    int totslots = 0;
+    var totslots = 0;
   	for ( i = 0; i<m; i++) {
       if (topics[i].begin < vSize[0]) vSize[0] = topics[i].begin;
       if (topics[i].end < vSize[1]) vSize[1] = topics[i].end;
@@ -122,14 +125,14 @@ d3.storyline = function() {
         slots[s].height = temp.length;
       }
       else {
-        if (temp.length > slots[s].length) slots[s].length = temp.length;
+        if (temp.length > slots[s].height) slots[s].height = temp.length;
       }
   	}
     var acc = 0;
     for (i=0; i<totslots; i++) {
-      if (slots[i] === undefined) slots[i] = {"length":0};
-      slots[i].dy = acc;
-      acc += slots[i].length;
+      if (slots[i] === undefined) slots[i] = {"height":0};
+      slots[i].y = acc;
+      acc += slots[i].height;
     }
     vSize[2] = acc;
   }
@@ -149,16 +152,18 @@ d3.storyline = function() {
         lastEnd.right = newlink;
         temp[j].left= newlink;
         newlink.right = temp[j];
+        newlink.person = people[p];
         links.push(newlink);
         lastEnd[p] = temp[j];
       }
     }
     for ( i =0; i<n; i++) {
       var newlink = {};
-      newlink.left = lastEnd[p];
-      lastEnd.right = newlink;
+      newlink.left = lastEnd[i];
+      lastEnd[i].right = newlink;
       people[i].left= newlink;
       newlink.right = people[i];
+      newlink.person = people[i];
       links.push(newlink);
     }
   }
@@ -189,10 +194,46 @@ d3.storyline = function() {
   }
   function scaleComponents() {
     var leftx, rightx;
+    var i,j,k;
+    var n = people.length;
+    var m = topics.length;
     leftx = vSize[0];
     rightx = vSize[1];
     leftx -= (vSize[1] - vSize[0]) * 0.1;
     rightx += (vSize[1] - vSize[0]) * 0.1;
-
+    channelHeight = size[1] / vSize[2];
+    var ph = channelHeight * phPer;
+    for (i = 0; i<n; i++) {
+      people[i].leftx = size[1];
+      people[i].rightx = 0;
+      people[i].y = size[0] / n;
+      people[i].dy = ph;
+    }
+    function getx(x) {
+      return (x-leftx) / (rightx - leftx) * size[0];
+    }
+    for (i=0; i<m; i++) {
+      var lx,rx;
+      var channel;
+      var s = topics[i].slot;
+      channel = slots[s].y;
+      lx = getx(topics[i].begin);
+      rx = getx(topics[i].end);
+      var y,dy;
+      var temp  = topics[i].participants;   
+      channel += parseInt((temp.length - slots[s].height)/2);
+      topics[i].y = channel * channelHeight;
+      topics[i].dy = temp.length * channelHeight;    
+      topics[i].leftx = lx;
+      topics[i].rightx = rx;
+      for (j =0; j<temp.length; j++) {
+        temp[j].leftx = lx;
+        temp[j].rightx = rx;
+        temp[j].y = (channel + j +phPad) * channelHeight;
+        temp[j].ry = (j +phPad) * channelHeight;
+        temp[j].dy = channelHeight * phPer;
+      }
+    }
   }
+  return storyline;
 }; 

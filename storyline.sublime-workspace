@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"selec",
+				"selectAll"
+			],
+			[
+				"ph",
+				"phPer"
+			],
+			[
+				"chan",
+				"channelHeight"
+			],
+			[
+				"ch",
+				"channelHeight"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"cha",
+				"channelHeight"
+			],
+			[
+				"tp",
+				"topics"
+			],
+			[
+				"pers",
+				"personHeight"
+			],
+			[
 				"v",
 				"vSize"
 			],
@@ -23,18 +55,31 @@
 			"file": "storyline.js",
 			"settings":
 			{
-				"buffer_size": 4690,
+				"buffer_size": 5952,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "\n\nThis repository\nExplore\nGist\nBlog\nHelp\nxh286286\n1,410  Watch\nStar 17,084Fork 3,229PUBLIC mbostock/d3\nHome Pages History New Page\nEdit Page Page History Clone URL\nAPI Reference\n\nWiki ▸ API Reference\nEverything in D3 is scoped under the d3 namespace. D3 uses semantic versioning. You can find the current version of D3 as d3.version.\n\nd3 (core)\n\nSelections\n\nd3.select - select an element from the current document.\nd3.selectAll - select multiple elements from the current document.\nselection.attr - get or set attribute values.\nselection.classed - add or remove CSS classes.\nselection.style - get or set style properties.\nselection.property - get or set raw properties.\nselection.text - get or set text content.\nselection.html - get or set inner HTML content.\nselection.append - create and append new elements.\nselection.insert - create and insert new elements before existing elements.\nselection.remove - remove elements from the document.\nselection.data - get or set data for a group of elements, while computing a relational join.\nselection.enter - returns placeholders for missing elements.\nselection.exit - returns elements that are no longer needed.\nselection.datum - get or set data for individual elements, without computing a join.\nselection.filter - filter a selection based on data.\nselection.sort - sort elements in the document based on data.\nselection.order - reorders elements in the document to match the selection.\nselection.on - add or remove event listeners for interaction.\nselection.transition - start a transition on the selected elements.\nselection.each - call a function for each selected element.\nselection.call - call a function passing in the current selection.\nselection.empty - returns true if the selection is empty.\nselection.node - returns the first node in the selection.\nselection.size - returns the number of elements in the selection.\nselection.select - subselect a descendant element for each selected element.\nselection.selectAll - subselect multiple descendants for each selected element.\nd3.selection - augment the selection prototype, or test instance types.\nd3.event - access the current user event for interaction.\nd3.mouse - gets the mouse position relative to a specified container.\nd3.touches - gets the touch positions relative to a specified container.\nTransitions\n\nd3.transition - start an animated transition.\ntransition.delay - specify per-element delay in milliseconds.\ntransition.duration - specify per-element duration in milliseconds.\ntransition.ease - specify transition easing function.\ntransition.attr - smoothly transition to the new attribute value.\ntransition.attrTween - smoothly transition between two attribute values.\ntransition.style - smoothly transition to the new style property value.\ntransition.styleTween - smoothly transition between two style property values.\ntransition.text - set the text content when the transition starts.\ntransition.tween - specify a custom tween operator to run as part of the transition.\ntransition.select - start a transition on a descendant element for each selected element.\ntransition.selectAll - start a transition on multiple descendants for each selected element.\ntransition.filter - filter a transition based on data.\ntransition.transition - when this transition ends, start another one on the same elements.\ntransition.remove - remove selected elements at the end of a transition.\ntransition.empty - returns true if the transition is empty.\ntransition.node - returns the first node in the transition.\ntransition.size - returns the number of elements in the selection.\ntransition.each - add a listener for transition end events.\ntransition.call - call a function passing in the current transition.\nd3.ease - customize transition timing.\nease - a parametric easing function.\nd3.timer - start a custom animation timer.\nd3.timer.flush - immediately execute any zero-delay timers.\nd3.interpolate - interpolate two values.\ninterpolate - a parametric interpolation function.\nd3.interpolateNumber - interpolate two numbers.\nd3.interpolateRound - interpolate two integers.\nd3.interpolateString - interpolate two strings.\nd3.interpolateRgb - interpolate two RGB colors.\nd3.interpolateHsl - interpolate two HSL colors.\nd3.interpolateLab - interpolate two L*a*b* colors.\nd3.interpolateHcl - interpolate two HCL colors.\nd3.interpolateArray - interpolate two arrays of values.\nd3.interpolateObject - interpolate two arbitrary objects.\nd3.interpolateTransform - interpolate two 2D matrix transforms.\nd3.interpolators - register a custom interpolator.\nWorking with Arrays\n\nd3.ascending - compare two values for sorting.\nd3.descending - compare two values for sorting.\nd3.min - find the minimum value in an array.\nd3.max - find the maximum value in an array.\nd3.extent - find the minimum and maximum value in an array.\nd3.sum - compute the sum of an array of numbers.\nd3.mean - compute the arithmetic mean of an array of numbers.\nd3.median - compute the median of an array of numbers (the 0.5-quantile).\nd3.quantile - compute a quantile for a sorted array of numbers.\nd3.bisect - search for a value in a sorted array.\nd3.bisectRight - search for a value in a sorted array.\nd3.bisectLeft - search for a value in a sorted array.\nd3.bisector - bisect using an accessor.\nd3.shuffle - randomize the order of an array.\nd3.permute - reorder an array of elements according to an array of indexes.\nd3.zip - transpose a variable number of arrays.\nd3.transpose - transpose an array of arrays.\nd3.keys - list the keys of an associative array.\nd3.values - list the values of an associated array.\nd3.entries - list the key-value entries of an associative array.\nd3.merge - merge multiple arrays into one array.\nd3.range - generate a range of numeric values.\nd3.nest - group array elements hierarchically.\nnest.key - add a level to the nest hierarchy.\nnest.sortKeys - sort the current nest level by key.\nnest.sortValues - sort the leaf nest level by value.\nnest.rollup - specify a rollup function for leaf values.\nnest.map - evaluate the nest operator, returning an associative array.\nnest.entries - evaluate the nest operator, returning an array of key-values tuples.\nd3.map - a shim for ES6 maps, since objects are not hashes!\nmap.has - returns true if the map contains the specified key.\nmap.get - returns the value for the specified key.\nmap.set - sets the value for the specified key.\nmap.remove - removes the entry for specified key.\nmap.keys - returns the map’s array of keys.\nmap.values - returns the map’s array of values.\nmap.entries - returns the map’s array of entries (key-values objects).\nmap.forEach - calls the specified function for each entry in the map.\nd3.set - a shim for ES6 sets, since objects are not hashes!\nset.has - returns true if the set contains the specified value.\nset.add - adds the specified value.\nset.remove - removes the specified value.\nset.values - returns the set’s array of values.\nset.forEach - calls the specified function for each value in the set.\nMath\n\nd3.random.normal - generate a random number with a normal distribution.\nd3.random.logNormal - generate a random number with a log-normal distribution.\nd3.random.irwinHall - generate a random number with an Irwin–Hall distribution.\nd3.transform - compute the standard form of a 2D matrix transform.\nLoading External Resources\n\nd3.xhr - request a resource using XMLHttpRequest.\nxhr.header - set a request header.\nxhr.mimeType - set the Accept request header and override the response MIME type.\nxhr.response - set a response mapping function.\nxhr.get - issue a GET request.\nxhr.post - issue a POST request.\nxhr.send - issue a request with the specified method and data.\nxhr.abort - abort an outstanding request.\nxhr.on - add an event listener for \"progress\", \"load\" or \"error\" events.\nd3.text - request a text file.\nd3.json - request a JSON blob.\nd3.html - request an HTML document fragment.\nd3.xml - request an XML document fragment.\nd3.csv - request a comma-separated values (CSV) file.\nd3.tsv - request a tab-separated values (TSV) file.\nString Formatting\n\nd3.format - format a number as a string.\nd3.formatPrefix - returns the [SI prefix] for the specified value and precision.\nd3.requote - quote a string for use in a regular expression.\nd3.round - rounds a value to some digits after the decimal point.\nCSV Formatting (d3.csv)\n\nd3.csv - request a comma-separated values (CSV) file.\nd3.csv.parse - parse a CSV string into objects using the header row.\nd3.csv.parseRows - parse a CSV string into tuples, ignoring the header row.\nd3.csv.format - format an array of objects into a CSV string.\nd3.csv.formatRows - format an array of tuples into a CSV string.\nd3.tsv - request a tab-separated values (TSV) file.\nd3.tsv.parse - parse a TSV string into objects using the header row.\nd3.tsv.parseRows - parse a TSV string into tuples, ignoring the header row.\nd3.tsv.format - format an array of objects into a TSV string.\nd3.tsv.formatRows - format an array of tuples into a TSV string.\nd3.dsv - create a parser/formatter for the specified delimiter and mime type.\nColors\n\nd3.rgb - specify a color in RGB space.\nrgb.brighter - increase RGB channels by some exponential factor (gamma).\nrgb.darker - decrease RGB channels by some exponential factor (gamma).\nrgb.hsl - convert from RGB to HSL.\nrgb.toString - convert an RGB color to a string.\nd3.hsl - specify a color in HSL space.\nhsl.brighter - increase lightness by some exponential factor (gamma).\nhsl.darker - decrease lightness by some exponential factor (gamma).\nhsl.rgb - convert from HSL to RGB.\nhsl.toString - convert an HSL color to a string.\nd3.lab - specify a color in L*a*b* space.\nlab.brighter - increase lightness by some exponential factor (gamma).\nlab.darker - decrease lightness by some exponential factor (gamma).\nlab.rgb - convert from L*a*b* to RGB.\nlab.toString - convert a L*a*b* color to a string.\nd3.hcl - specify a color in HCL space.\nhcl.brighter - increase lightness by some exponential factor (gamma).\nhcl.darker - decrease lightness by some exponential factor (gamma).\nhcl.rgb - convert from HCL to RGB.\nhcl.toString - convert an HCL color to a string.\nNamespaces\n\nd3.ns.prefix - access or extend known XML namespaces.\nd3.ns.qualify - qualify a prefixed name, such as \"xlink:href\".\nInternals\n\nd3.functor - create a function that returns a constant.\nd3.rebind - rebind an inherited getter/setter method to a subclass.\nd3.dispatch - create a custom event dispatcher.\ndispatch.on - register or unregister an event listener.\ndispatch.type - dispatch an event to registered listeners.\nd3.scale (Scales)\n\nQuantitative\n\nd3.scale.linear - construct a linear quantitative scale.\nlinear - get the range value corresponding to a given domain value.\nlinear.invert - get the domain value corresponding to a given range value.\nlinear.domain - get or set the scale's input domain.\nlinear.range - get or set the scale's output range.\nlinear.rangeRound - set the scale's output range, and enable rounding.\nlinear.interpolate - get or set the scale's output interpolator.\nlinear.clamp - enable or disable clamping of the output range.\nlinear.nice - extend the scale domain to nice round numbers.\nlinear.ticks - get representative values from the input domain.\nlinear.tickFormat - get a formatter for displaying tick values.\nlinear.copy - create a new scale from an existing scale.\nd3.scale.sqrt - construct a quantitative scale with a square root transform.\nd3.scale.pow - construct a quantitative scale with an exponential transform.\npow - get the range value corresponding to a given domain value.\npow.invert - get the domain value corresponding to a given range value.\npow.domain - get or set the scale's input domain.\npow.range - get or set the scale's output range.\npow.rangeRound - set the scale's output range, and enable rounding.\npow.interpolate - get or set the scale's output interpolator.\npow.clamp - enable or disable clamping of the output range.\npow.nice - extend the scale domain to nice round numbers.\npow.ticks - get representative values from the input domain.\npow.tickFormat - get a formatter for displaying tick values.\npow.exponent - get or set the exponent power.\npow.copy - create a new scale from an existing scale.\nd3.scale.log - construct a quantitative scale with an logarithmic transform.\nlog - get the range value corresponding to a given domain value.\nlog.invert - get the domain value corresponding to a given range value.\nlog.domain - get or set the scale's input domain.\nlog.range - get or set the scale's output range.\nlog.rangeRound - set the scale's output range, and enable rounding.\nlog.interpolate - get or set the scale's output interpolator.\nlog.clamp - enable or disable clamping of the output range.\nlog.nice - extend the scale domain to nice powers of ten.\nlog.ticks - get representative values from the input domain.\nlog.tickFormat - get a formatter for displaying tick values.\nlog.copy - create a new scale from an existing scale.\nd3.scale.quantize - construct a linear quantitative scale with a discrete output range.\nquantize - get the range value corresponding to a given domain value.\nquantize.invertExtent - get the domain values for the specified range value.\nquantize.domain - get or set the scale's input domain.\nquantize.range - get or set the scale's output range (as discrete values).\nquantize.copy - create a new scale from an existing scale.\nd3.scale.threshold - construct a threshold scale with a discrete output range.\nthreshold - get the range value corresponding to a given domain value.\nthreshold.invertExtent - get the domain values for the specified range value.\nthreshold.domain - get or set the scale's input domain.\nthreshold.range - get or set the scale's output range (as discrete values).\nthreshold.copy - create a new scale from an existing scale.\nd3.scale.quantile - construct a quantitative scale mapping to quantiles.\nquantile - get the range value corresponding to a given domain value.\nquantile.invertExtent - get the domain values for the specified range value.\nquantile.domain - get or set the scale's input domain (as discrete values).\nquantile.range - get or set the scale's output range (as discrete values).\nquantile.quantiles - get the scale's quantile bin thresholds.\nquantile.copy - create a new scale from an existing scale.\nd3.scale.identity - construct a linear identity scale.\nidentity - the identity function.\nidentity.invert - equivalent to identity; the identity function.\nidentity.domain - get or set the scale's domain and range.\nidentity.range - equivalent to identity.domain.\nidentity.ticks - get representative values from the domain.\nidentity.tickFormat - get a formatter for displaying tick values.\nidentity.copy - create a new scale from an existing scale.\nOrdinal\n\nd3.scale.ordinal - construct an ordinal scale.\nordinal - get the range value corresponding to a given domain value.\nordinal.domain - get or set the scale's input domain.\nordinal.range - get or set the scale's output range.\nordinal.rangePoints - divide a continuous output range for discrete points.\nordinal.rangeBands - divide a continuous output range for discrete bands.\nordinal.rangeRoundBands - divide a continuous output range for discrete bands.\nordinal.rangeBand - get the discrete range band width.\nordinal.rangeExtent - get the minimum and maximum values of the output range.\nordinal.copy - create a new scale from an existing scale.\nd3.scale.category10 - construct an ordinal scale with ten categorical colors.\nd3.scale.category20 - construct an ordinal scale with twenty categorical colors.\nd3.scale.category20b - construct an ordinal scale with twenty categorical colors.\nd3.scale.category20c - construct an ordinal scale with twenty categorical colors.\nd3.svg (SVG)\n\nShapes\n\nd3.svg.line - create a new line generator.\nline - generate a piecewise linear curve, as in a line chart.\nline.x - get or set the x-coordinate accessor.\nline.y - get or set the y-coordinate accessor.\nline.interpolate - get or set the interpolation mode.\nline.tension - get or set the cardinal spline tension.\nline.defined - control whether the line is defined at a given point.\nd3.svg.line.radial - create a new radial line generator.\nline - generate a piecewise linear curve, as in a polar line chart.\nline.radius - get or set the radius accessor.\nline.angle - get or set the angle accessor.\nline.defined - control whether the line is defined at a given point.\nd3.svg.area - create a new area generator.\narea - generate a piecewise linear area, as in an area chart.\narea.x - get or set the x-coordinate accessors.\narea.x0 - get or set the x0-coordinate (baseline) accessor.\narea.x1 - get or set the x1-coordinate (topline) accessor.\narea.y - get or set the y-coordinate accessors.\narea.y0 - get or set the y0-coordinate (baseline) accessor.\narea.y1 - get or set the y1-coordinate (topline) accessor.\narea.interpolate - get or set the interpolation mode.\narea.tension - get or set the cardinal spline tension.\narea.defined - control whether the area is defined at a given point.\nd3.svg.area.radial - create a new area generator.\narea - generate a piecewise linear area, as in a polar area chart.\narea.radius - get or set the radius accessors.\narea.innerRadius - get or set the inner radius (baseline) accessor.\narea.outerRadius - get or set the outer radius (topline) accessor.\narea.angle - get or set the angle accessors.\narea.startAngle - get or set the angle (baseline) accessor.\narea.endAngle - get or set the angle (topline) accessor.\narea.defined - control whether the area is defined at a given point.\nd3.svg.arc - create a new arc generator.\narc - generate a solid arc, as in a pie or donut chart.\narc.innerRadius - get or set the inner radius accessor.\narc.outerRadius - get or set the outer radius accessor.\narc.startAngle - get or set the start angle accessor.\narc.endAngle - get or set the end angle accessor.\narc.centroid - compute the arc centroid.\nd3.svg.symbol - create a new symbol generator.\nsymbol - generate categorical symbols, as in a scatterplot.\nsymbol.type - get or set the symbol type accessor.\nsymbol.size - get or set the symbol size (in square pixels) accessor.\nd3.svg.symbolTypes - the array of supported symbol types.\nd3.svg.chord - create a new chord generator.\nchord - generate a quadratic Bézier connecting two arcs, as in a chord diagram.\nchord.radius - get or set the arc radius accessor.\nchord.startAngle - get or set the arc start angle accessor.\nchord.endAngle - get or set the arc end angle accessor.\nchord.source - get or set the source arc accessor.\nchord.target - get or set the target arc accessor.\nd3.svg.diagonal - create a new diagonal generator.\ndiagonal - generate a two-dimensional Bézier connector, as in a node-link diagram.\ndiagonal.source - get or set the source point accessor.\ndiagonal.target - get or set the target point accessor.\ndiagonal.projection - get or set an optional point transform.\nd3.svg.diagonal.radial - create a new diagonal generator.\ndiagonal - generate a two-dimensional Bézier connector, as in a node-link diagram.\nAxes\n\nd3.svg.axis - create a new axis generator.\naxis - creates or updates an axis for the given selection or transition.\naxis.scale - get or set the axis scale.\naxis.orient - get or set the axis orientation.\naxis.ticks - control how ticks are generated for the axis.\naxis.tickValues - specify tick values explicitly.\naxis.tickSubdivide - optionally subdivide ticks uniformly.\naxis.tickSize - specify the size of major, minor and end ticks.\naxis.tickPadding - specify padding between ticks and tick labels.\naxis.tickFormat - override the tick formatting for labels.\nControls\n\nd3.svg.brush - click and drag to select one- or two-dimensional regions.\nbrush - creates or updates a brush for the given selection or transition.\nbrush.x - get or set the brush’s x-scale.\nbrush.y - get or set the brush’s y-scale.\nbrush.extent - get or set the brush’s extent.\nbrush.clear - reset the brush extent.\nbrush.empty - returns true if the brush extent is empty.\nbrush.on - respond to events when the brush is moved.\nd3.time (Time)\n\nTime Formatting\n\nd3.time.format - create a new local time formatter for a given specifier.\nformat - format a date into a string.\nformat.parse - parse a string into a date.\nd3.time.format.utc - create a new UTC time formatter for a given specifier.\nd3.time.format.iso - the ISO 8601 UTC time formatter.\nTime Scales\n\nd3.time.scale - construct a linear time scale.\nscale - get the range value corresponding to a given domain value.\nscale.invert - get the domain value corresponding to a given range value.\nscale.domain - get or set the scale's input domain.\nscale.nice - extend the scale domain to nice round numbers.\nscale.range - get or set the scale's output range.\nscale.rangeRound - set the scale's output range, and enable rounding.\nscale.interpolate - get or set the scale's output interpolator.\nscale.clamp - enable or disable clamping of the output range.\nscale.ticks - get representative values from the input domain.\nscale.tickFormat - get a formatter for displaying tick values.\nscale.copy - create a new scale from an existing scale.\nTime Intervals\n\nd3.time.interval - a time interval in local time.\ninterval - alias for interval.floor.\ninterval.range - returns dates within the specified range.\ninterval.floor - rounds down to the nearest interval.\ninterval.round - rounds up or down to the nearest interval.\ninterval.ceil - rounds up to the nearest interval.\ninterval.offset - returns a date offset by some interval.\ninterval.utc - returns the UTC-equivalent time interval.\nd3.time.day - every day (12:00 AM).\nd3.time.days - alias for day.range.\nd3.time.dayOfYear - computes the day number.\nd3.time.hour - every hour (e.g., 1:00 AM).\nd3.time.hours - alias for hour.range.\nd3.time.minute - every minute (e.g., 1:02 AM).\nd3.time.minutes - alias for minute.range.\nd3.time.month - every month (e.g., February 1, 12:00 AM).\nd3.time.months - alias for month.range.\nd3.time.second - every second (e.g., 1:02:03 AM).\nd3.time.seconds - alias for second.range.\nd3.time.sunday - every Sunday (e.g., February 5, 12:00 AM).\nd3.time.sundays - alias for sunday.range.\nd3.time.sundayOfYear - computes the sunday-based week number.\nd3.time.monday - every Monday (e.g., February 5, 12:00 AM).\nd3.time.mondays - alias for monday.range.\nd3.time.mondayOfYear - computes the monday-based week number.\nd3.time.tuesday - every Tuesday (e.g., February 5, 12:00 AM).\nd3.time.tuesdays - alias for tuesday.range.\nd3.time.tuesdayOfYear - computes the tuesday-based week number.\nd3.time.wednesday - every Wednesday (e.g., February 5, 12:00 AM).\nd3.time.wednesdays - alias for wednesday.range.\nd3.time.wednesdayOfYear - computes the wednesday-based week number.\nd3.time.thursday - every Thursday (e.g., February 5, 12:00 AM).\nd3.time.thursdays - alias for thursday.range.\nd3.time.thursdayOfYear - computes the thursday-based week number.\nd3.time.friday - every Friday (e.g., February 5, 12:00 AM).\nd3.time.fridays - alias for friday.range.\nd3.time.fridayOfYear - computes the friday-based week number.\nd3.time.saturday - every Saturday (e.g., February 5, 12:00 AM).\nd3.time.saturdays - alias for saturday.range.\nd3.time.saturdayOfYear - computes the saturday-based week number.\nd3.time.week - alias for sunday.\nd3.time.weeks - alias for sunday.range.\nd3.time.weekOfYear - alias for sundayOfYear.\nd3.time.year - every year (e.g., January 1, 12:00 AM).\nd3.time.years - alias for year.range.\nd3.layout (Layouts)\n\nBundle\n\nd3.layout.bundle - construct a new default bundle layout.\nbundle - apply Holten's hierarchical bundling algorithm to edges.\nChord\n\nd3.layout.chord - produce a chord diagram from a matrix of relationships.\nchord.matrix - get or set the matrix data backing the layout.\nchord.padding - get or set the angular padding between chord segments.\nchord.sortGroups - get or set the comparator function for groups.\nchord.sortSubgroups - get or set the comparator function for subgroups.\nchord.sortChords - get or set the comparator function for chords (z-order).\nchord.chords - retrieve the computed chord angles.\nchord.groups - retrieve the computed group angles.\nCluster\n\nd3.layout.cluster - cluster entities into a dendrogram.\ncluster.sort - get or set the comparator function for sibling nodes.\ncluster.children - get or set the accessor function for child nodes.\ncluster.nodes - compute the cluster layout and return the array of nodes.\ncluster.links - compute the parent-child links between tree nodes.\ncluster.separation - get or set the spacing function between neighboring nodes.\ncluster.size - get or set the layout size in x and y.\nForce\n\nd3.layout.force - position linked nodes using physical simulation.\nforce.on - listen to updates in the computed layout positions.\nforce.nodes - get or set the array of nodes to layout.\nforce.links - get or set the array of links between nodes.\nforce.size - get or set the layout size in x and y.\nforce.linkDistance - get or set the link distance.\nforce.linkStrength - get or set the link strength.\nforce.friction - get or set the friction coefficient.\nforce.charge - get or set the charge strength.\nforce.gravity - get or set the gravity strength.\nforce.theta - get or set the accuracy of the charge interaction.\nforce.start - start or restart the simulation when the nodes change.\nforce.resume - reheat the cooling parameter and restart simulation.\nforce.stop - immediately terminate the simulation.\nforce.alpha - get or set the layout's cooling parameter.\nforce.tick - run the layout simulation one step.\nforce.drag - bind a behavior to nodes to allow interactive dragging.\nHierarchy\n\nd3.layout.hierarchy - derive a custom hierarchical layout implementation.\nhierarchy.sort - get or set the comparator function for sibling nodes.\nhierarchy.children - get or set the accessor function for child nodes.\nhierarchy.nodes - compute the layout and return the array of nodes.\nhierarchy.links - compute the parent-child links between tree nodes.\nhierarchy.value - get or set the value accessor function.\nhierarchy.revalue - recompute the hierarchy values.\nHistogram\n\nd3.layout.histogram - construct a new default histogram layout.\nhistogram - compute the distribution of data using quantized bins.\nhistogram.value - get or set the value accessor function.\nhistogram.range - get or set the considered value range.\nhistogram.bins - specify how values are organized into bins.\nhistogram.frequency - compute the distribution as counts or probabilities.\nPack\n\nd3.layout.pack - produce a hierarchical layout using recursive circle-packing.\npack.sort - control the order in which sibling nodes are traversed.\npack.children - get or set the children accessor function.\npack.nodes - compute the pack layout and return the array of nodes.\npack.links - compute the parent-child links between tree nodes.\npack.value - get or set the value accessor used to size circles.\npack.size - specify the layout size in x and y.\npack.radius - specify the node radius, rather than deriving it from value.\npack.padding - specify the layout padding in (approximate) pixels.\nPartition\n\nd3.layout.partition - recursively partition a node tree into a sunburst or icicle.\npartition.sort - control the order in which sibling nodes are traversed.\npartition.children - get or set the children accessor function.\npartition.nodes - compute the partition layout and return the array of nodes.\npartition.links - compute the parent-child links between tree nodes.\npartition.value - get or set the value accessor used to size circles.\npartition.size - specify the layout size in x and y.\nPie\n\nd3.layout.pie - construct a new default pie layout.\npie - compute the start and end angles for arcs in a pie or donut chart.\npie.value - get or set the value accessor function.\npie.sort - control the clockwise order of pie slices.\npie.startAngle - get or set the overall start angle of the pie.\npie.endAngle - get or set the overall end angle of the pie.\nStack\n\nd3.layout.stack - construct a new default stack layout.\nstack - compute the baseline for each series in a stacked bar or area chart.\nstack.values - get or set the values accessor function per series.\nstack.order - control the order in which series are stacked.\nstack.offset - specify the overall baseline algorithm.\nstack.x - get or set the x-dimension accessor function.\nstack.y - get or set the y-dimension accessor function.\nstack.out - get or set the output function for storing the baseline.\nTree\n\nd3.layout.tree - position a tree of nodes tidily.\ntree.sort - control the order in which sibling nodes are traversed.\ntree.children - get or set the children accessor function.\ntree.nodes - compute the tree layout and return the array of nodes.\ntree.links - compute the parent-child links between tree nodes.\ntree.separation - get or set the spacing function between neighboring nodes.\ntree.size - specify the layout size in x and y.\nTreemap\n\nd3.layout.treemap - use recursive spatial subdivision to display a tree of nodes.\ntreemap.sort - control the order in which sibling nodes are traversed.\ntreemap.children - get or set the children accessor function.\ntreemap.nodes - compute the treemap layout and return the array of nodes.\ntreemap.links - compute the parent-child links between tree nodes.\ntreemap.value - get or set the value accessor used to size treemap cells.\ntreemap.size - specify the layout size in x and y.\ntreemap.padding - specify the padding between a parent and its children.\ntreemap.round - enable or disable rounding to exact pixels.\ntreemap.sticky - make the layout sticky for stable updates.\ntreemap.mode - change the treemap layout algorithm.\nd3.geo (Geography)\n\nPaths\n\nd3.geo.path - create a new geographic path generator.\npath - project the specified feature and render it to the context.\npath.projection - get or set the geographic projection.\npath.context - get or set the render context.\npath.pointRadius - get or set the radius to display point features.\npath.area - compute the projected area of a given feature.\npath.centroid - compute the projected centroid of a given feature.\npath.bounds - compute the projected bounds of a given feature.\nd3.geo.circle - create a circle generator.\ncircle - generate a piecewise circle as a Polygon.\ncircle.origin - specify the origin in latitude and longitude.\ncircle.angle - specify the angular radius in degrees.\ncircle.precision - specify the precision of the piecewise circle.\nd3.geo.area - compute the spherical area of a given feature.\nd3.geo.bounds - compute the latitude-longitude bounding box for a given feature.\nd3.geo.centroid - compute the spherical centroid of a given feature.\nd3.geo.distance - compute the great-arc distance between two points.\nd3.geo.interpolate - interpolate between two points along a great arc.\nd3.geo.length - compute the length of a line string or the circumference of a polygon.\nd3.geo.rotation - create a rotation function for the specified angles [λ, φ, γ].\nrotation - rotate the given location around the sphere.\nrotation.invert - inverse-rotate the given location around the sphere.\nProjections\n\nd3.geo.projection - create a standard projection from a raw projection.\nprojection - project the specified location.\nprojection.invert - invert the projection for the specified point.\nprojection.rotate - get or set the projection’s three-axis rotation.\nprojection.center - get or set the projection’s center location.\nprojection.translate - get or set the projection’s translation position.\nprojection.scale - get or set the projection’s scale factor.\nprojection.clipAngle - get or set the radius of the projection’s clip circle.\nprojection.clipExtent - get or set the projection’s viewport clip extent, in pixels.\nprojection.precision - get or set the precision threshold for adaptive resampling.\nprojection.stream - wrap the specified stream listener, projecting input geometry.\nd3.geo.projectionMutator - create a standard projection from a mutable raw projection.\nd3.geo.albers - the Albers equal-area conic projection.\nalbers.parallels - get or set the projection's two standard parallels.\nd3.geo.albersUsa - a composite Albers projection for the United States.\nd3.geo.azimuthalEqualArea - the azimuthal equal-area projection.\nd3.geo.azimuthalEquidistant - the azimuthal equidistant projection.\nd3.geo.conicConformal - the conic conformal projection.\nd3.geo.conicEquidistant - the conic equidistant projection.\nd3.geo.conicEqualArea the conic equal-area (a.k.a. Albers) projection.\nd3.geo.equirectangular - the equirectangular (plate carreé) projection.\nd3.geo.gnomonic - the gnomonic projection.\nd3.geo.mercator - the spherical Mercator projection.\nd3.geo.orthographic - the azimuthal orthographic projection.\nd3.geo.stereographic - the azimuthal stereographic projection.\nd3.geo.azimuthalEqualArea.raw - the raw azimuthal equal-area projection.\nd3.geo.azimuthalEquidistant.raw - the azimuthal equidistant projection.\nd3.geo.conicConformal.raw - the raw conic conformal projection.\nd3.geo.conicEquidistant.raw - the raw conic equidistant projection.\nd3.geo.conicEqualArea.raw the raw conic equal-area (a.k.a. Albers) projection.\nd3.geo.equirectangular.raw - the raw equirectangular (plate carrée) projection.\nd3.geo.gnomonic.raw - the raw gnomonic projection.\nd3.geo.mercator.raw - the raw Mercator projection.\nd3.geo.orthographic.raw - the raw azimuthal orthographic projection.\nd3.geo.stereographic.raw - the raw azimuthal stereographic projection.\nd3.geo.transverseMercator.raw - the raw transverse Mercator projection.\nStreams\n\nd3.geo.stream - convert a GeoJSON object to a geometry stream.\nstream.point - indicate an x, y (and optionally z) coordinate.\nstream.lineStart - indicate the start of a line or ring.\nstream.lineEnd - indicate the end of a line or ring.\nstream.polygonStart - indicate the start of a polygon.\nstream.polygonEnd - indicate the end of a polygon.\nstream.sphere - indicate a sphere.\nd3.geom (Geometry)\n\nVoronoi\n\nd3.geom.voronoi - create a Voronoi layout with default accessors.\nvoronoi - compute the Voronoi tessellation for the specified points.\nvoronoi.x - get or set the x-coordinate accessor for each point.\nvoronoi.y - get or set the y-coordinate accessor for each point.\nvoronoi.clipExent - get or set the clip extent for the tesselation.\nvoronoi.links - compute the Delaunay mesh as a network of links.\nvoronoi.triangles - compute the Delaunay mesh as a triangular tessellation.\nQuadtree\n\nd3.geom.quadtree - constructs a quadtree for an array of points.\nquadtree.add - add a point to the quadtree.\nquadtree.visit - recursively visit nodes in the quadtree.\nPolygon\n\nd3.geom.polygon - create a polygon from the specified array of points.\npolygon.area - compute the counterclockwise area of this polygon.\npolygon.centroid - compute the area centroid of this polygon.\npolygon.clip - clip the specified polygon to this polygon.\nHull\n\nd3.geom.hull - create a convex hull layout with default accessors.\nhull - compute the convex hull for the given array of points.\nhull.x - get or set the x-coordinate accessor.\nhull.y - get or set the y-coordinate accessor.\nd3.behavior (Behaviors)\n\nDrag\n\nd3.behavior.drag\ndrag.origin\ndrag.on\nZoom\n\nd3.behavior.zoom\nzoom.on\nzoom.scale\nzoom.translate\nzoom.scaleExtent\nzoom.x\nzoom.y\nLast edited by Emrouz, 22 days ago\nStatus API Training Shop Blog About © 2013 GitHub, Inc. Terms Privacy Security Contact 12",
-			"file": "d3.api",
-			"file_size": 35955,
-			"file_write_time": 130203340192426434,
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 35228,
+				"buffer_size": 3316,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stroydata.js",
+			"settings":
+			{
+				"buffer_size": 617,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "backup.js",
+			"settings":
+			{
+				"buffer_size": 2574,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,18 +100,37 @@
 			}
 		},
 		{
-			"file": "index.html",
+			"contents": "\n\nThis repository\nExplore\nGist\nBlog\nHelp\nxh286286\n1,410  Watch\nStar 17,084Fork 3,229PUBLIC mbostock/d3\nHome Pages History New Page\nEdit Page Page History Clone URL\nAPI Reference\n\nWiki ▸ API Reference\nEverything in D3 is scoped under the d3 namespace. D3 uses semantic versioning. You can find the current version of D3 as d3.version.\n\nd3 (core)\n\nSelections\n\nd3.select - select an element from the current document.\nd3.selectAll - select multiple elements from the current document.\nselection.attr - get or set attribute values.\nselection.classed - add or remove CSS classes.\nselection.style - get or set style properties.\nselection.property - get or set raw properties.\nselection.text - get or set text content.\nselection.html - get or set inner HTML content.\nselection.append - create and append new elements.\nselection.insert - create and insert new elements before existing elements.\nselection.remove - remove elements from the document.\nselection.data - get or set data for a group of elements, while computing a relational join.\nselection.enter - returns placeholders for missing elements.\nselection.exit - returns elements that are no longer needed.\nselection.datum - get or set data for individual elements, without computing a join.\nselection.filter - filter a selection based on data.\nselection.sort - sort elements in the document based on data.\nselection.order - reorders elements in the document to match the selection.\nselection.on - add or remove event listeners for interaction.\nselection.transition - start a transition on the selected elements.\nselection.each - call a function for each selected element.\nselection.call - call a function passing in the current selection.\nselection.empty - returns true if the selection is empty.\nselection.node - returns the first node in the selection.\nselection.size - returns the number of elements in the selection.\nselection.select - subselect a descendant element for each selected element.\nselection.selectAll - subselect multiple descendants for each selected element.\nd3.selection - augment the selection prototype, or test instance types.\nd3.event - access the current user event for interaction.\nd3.mouse - gets the mouse position relative to a specified container.\nd3.touches - gets the touch positions relative to a specified container.\nTransitions\n\nd3.transition - start an animated transition.\ntransition.delay - specify per-element delay in milliseconds.\ntransition.duration - specify per-element duration in milliseconds.\ntransition.ease - specify transition easing function.\ntransition.attr - smoothly transition to the new attribute value.\ntransition.attrTween - smoothly transition between two attribute values.\ntransition.style - smoothly transition to the new style property value.\ntransition.styleTween - smoothly transition between two style property values.\ntransition.text - set the text content when the transition starts.\ntransition.tween - specify a custom tween operator to run as part of the transition.\ntransition.select - start a transition on a descendant element for each selected element.\ntransition.selectAll - start a transition on multiple descendants for each selected element.\ntransition.filter - filter a transition based on data.\ntransition.transition - when this transition ends, start another one on the same elements.\ntransition.remove - remove selected elements at the end of a transition.\ntransition.empty - returns true if the transition is empty.\ntransition.node - returns the first node in the transition.\ntransition.size - returns the number of elements in the selection.\ntransition.each - add a listener for transition end events.\ntransition.call - call a function passing in the current transition.\nd3.ease - customize transition timing.\nease - a parametric easing function.\nd3.timer - start a custom animation timer.\nd3.timer.flush - immediately execute any zero-delay timers.\nd3.interpolate - interpolate two values.\ninterpolate - a parametric interpolation function.\nd3.interpolateNumber - interpolate two numbers.\nd3.interpolateRound - interpolate two integers.\nd3.interpolateString - interpolate two strings.\nd3.interpolateRgb - interpolate two RGB colors.\nd3.interpolateHsl - interpolate two HSL colors.\nd3.interpolateLab - interpolate two L*a*b* colors.\nd3.interpolateHcl - interpolate two HCL colors.\nd3.interpolateArray - interpolate two arrays of values.\nd3.interpolateObject - interpolate two arbitrary objects.\nd3.interpolateTransform - interpolate two 2D matrix transforms.\nd3.interpolators - register a custom interpolator.\nWorking with Arrays\n\nd3.ascending - compare two values for sorting.\nd3.descending - compare two values for sorting.\nd3.min - find the minimum value in an array.\nd3.max - find the maximum value in an array.\nd3.extent - find the minimum and maximum value in an array.\nd3.sum - compute the sum of an array of numbers.\nd3.mean - compute the arithmetic mean of an array of numbers.\nd3.median - compute the median of an array of numbers (the 0.5-quantile).\nd3.quantile - compute a quantile for a sorted array of numbers.\nd3.bisect - search for a value in a sorted array.\nd3.bisectRight - search for a value in a sorted array.\nd3.bisectLeft - search for a value in a sorted array.\nd3.bisector - bisect using an accessor.\nd3.shuffle - randomize the order of an array.\nd3.permute - reorder an array of elements according to an array of indexes.\nd3.zip - transpose a variable number of arrays.\nd3.transpose - transpose an array of arrays.\nd3.keys - list the keys of an associative array.\nd3.values - list the values of an associated array.\nd3.entries - list the key-value entries of an associative array.\nd3.merge - merge multiple arrays into one array.\nd3.range - generate a range of numeric values.\nd3.nest - group array elements hierarchically.\nnest.key - add a level to the nest hierarchy.\nnest.sortKeys - sort the current nest level by key.\nnest.sortValues - sort the leaf nest level by value.\nnest.rollup - specify a rollup function for leaf values.\nnest.map - evaluate the nest operator, returning an associative array.\nnest.entries - evaluate the nest operator, returning an array of key-values tuples.\nd3.map - a shim for ES6 maps, since objects are not hashes!\nmap.has - returns true if the map contains the specified key.\nmap.get - returns the value for the specified key.\nmap.set - sets the value for the specified key.\nmap.remove - removes the entry for specified key.\nmap.keys - returns the map’s array of keys.\nmap.values - returns the map’s array of values.\nmap.entries - returns the map’s array of entries (key-values objects).\nmap.forEach - calls the specified function for each entry in the map.\nd3.set - a shim for ES6 sets, since objects are not hashes!\nset.has - returns true if the set contains the specified value.\nset.add - adds the specified value.\nset.remove - removes the specified value.\nset.values - returns the set’s array of values.\nset.forEach - calls the specified function for each value in the set.\nMath\n\nd3.random.normal - generate a random number with a normal distribution.\nd3.random.logNormal - generate a random number with a log-normal distribution.\nd3.random.irwinHall - generate a random number with an Irwin–Hall distribution.\nd3.transform - compute the standard form of a 2D matrix transform.\nLoading External Resources\n\nd3.xhr - request a resource using XMLHttpRequest.\nxhr.header - set a request header.\nxhr.mimeType - set the Accept request header and override the response MIME type.\nxhr.response - set a response mapping function.\nxhr.get - issue a GET request.\nxhr.post - issue a POST request.\nxhr.send - issue a request with the specified method and data.\nxhr.abort - abort an outstanding request.\nxhr.on - add an event listener for \"progress\", \"load\" or \"error\" events.\nd3.text - request a text file.\nd3.json - request a JSON blob.\nd3.html - request an HTML document fragment.\nd3.xml - request an XML document fragment.\nd3.csv - request a comma-separated values (CSV) file.\nd3.tsv - request a tab-separated values (TSV) file.\nString Formatting\n\nd3.format - format a number as a string.\nd3.formatPrefix - returns the [SI prefix] for the specified value and precision.\nd3.requote - quote a string for use in a regular expression.\nd3.round - rounds a value to some digits after the decimal point.\nCSV Formatting (d3.csv)\n\nd3.csv - request a comma-separated values (CSV) file.\nd3.csv.parse - parse a CSV string into objects using the header row.\nd3.csv.parseRows - parse a CSV string into tuples, ignoring the header row.\nd3.csv.format - format an array of objects into a CSV string.\nd3.csv.formatRows - format an array of tuples into a CSV string.\nd3.tsv - request a tab-separated values (TSV) file.\nd3.tsv.parse - parse a TSV string into objects using the header row.\nd3.tsv.parseRows - parse a TSV string into tuples, ignoring the header row.\nd3.tsv.format - format an array of objects into a TSV string.\nd3.tsv.formatRows - format an array of tuples into a TSV string.\nd3.dsv - create a parser/formatter for the specified delimiter and mime type.\nColors\n\nd3.rgb - specify a color in RGB space.\nrgb.brighter - increase RGB channels by some exponential factor (gamma).\nrgb.darker - decrease RGB channels by some exponential factor (gamma).\nrgb.hsl - convert from RGB to HSL.\nrgb.toString - convert an RGB color to a string.\nd3.hsl - specify a color in HSL space.\nhsl.brighter - increase lightness by some exponential factor (gamma).\nhsl.darker - decrease lightness by some exponential factor (gamma).\nhsl.rgb - convert from HSL to RGB.\nhsl.toString - convert an HSL color to a string.\nd3.lab - specify a color in L*a*b* space.\nlab.brighter - increase lightness by some exponential factor (gamma).\nlab.darker - decrease lightness by some exponential factor (gamma).\nlab.rgb - convert from L*a*b* to RGB.\nlab.toString - convert a L*a*b* color to a string.\nd3.hcl - specify a color in HCL space.\nhcl.brighter - increase lightness by some exponential factor (gamma).\nhcl.darker - decrease lightness by some exponential factor (gamma).\nhcl.rgb - convert from HCL to RGB.\nhcl.toString - convert an HCL color to a string.\nNamespaces\n\nd3.ns.prefix - access or extend known XML namespaces.\nd3.ns.qualify - qualify a prefixed name, such as \"xlink:href\".\nInternals\n\nd3.functor - create a function that returns a constant.\nd3.rebind - rebind an inherited getter/setter method to a subclass.\nd3.dispatch - create a custom event dispatcher.\ndispatch.on - register or unregister an event listener.\ndispatch.type - dispatch an event to registered listeners.\nd3.scale (Scales)\n\nQuantitative\n\nd3.scale.linear - construct a linear quantitative scale.\nlinear - get the range value corresponding to a given domain value.\nlinear.invert - get the domain value corresponding to a given range value.\nlinear.domain - get or set the scale's input domain.\nlinear.range - get or set the scale's output range.\nlinear.rangeRound - set the scale's output range, and enable rounding.\nlinear.interpolate - get or set the scale's output interpolator.\nlinear.clamp - enable or disable clamping of the output range.\nlinear.nice - extend the scale domain to nice round numbers.\nlinear.ticks - get representative values from the input domain.\nlinear.tickFormat - get a formatter for displaying tick values.\nlinear.copy - create a new scale from an existing scale.\nd3.scale.sqrt - construct a quantitative scale with a square root transform.\nd3.scale.pow - construct a quantitative scale with an exponential transform.\npow - get the range value corresponding to a given domain value.\npow.invert - get the domain value corresponding to a given range value.\npow.domain - get or set the scale's input domain.\npow.range - get or set the scale's output range.\npow.rangeRound - set the scale's output range, and enable rounding.\npow.interpolate - get or set the scale's output interpolator.\npow.clamp - enable or disable clamping of the output range.\npow.nice - extend the scale domain to nice round numbers.\npow.ticks - get representative values from the input domain.\npow.tickFormat - get a formatter for displaying tick values.\npow.exponent - get or set the exponent power.\npow.copy - create a new scale from an existing scale.\nd3.scale.log - construct a quantitative scale with an logarithmic transform.\nlog - get the range value corresponding to a given domain value.\nlog.invert - get the domain value corresponding to a given range value.\nlog.domain - get or set the scale's input domain.\nlog.range - get or set the scale's output range.\nlog.rangeRound - set the scale's output range, and enable rounding.\nlog.interpolate - get or set the scale's output interpolator.\nlog.clamp - enable or disable clamping of the output range.\nlog.nice - extend the scale domain to nice powers of ten.\nlog.ticks - get representative values from the input domain.\nlog.tickFormat - get a formatter for displaying tick values.\nlog.copy - create a new scale from an existing scale.\nd3.scale.quantize - construct a linear quantitative scale with a discrete output range.\nquantize - get the range value corresponding to a given domain value.\nquantize.invertExtent - get the domain values for the specified range value.\nquantize.domain - get or set the scale's input domain.\nquantize.range - get or set the scale's output range (as discrete values).\nquantize.copy - create a new scale from an existing scale.\nd3.scale.threshold - construct a threshold scale with a discrete output range.\nthreshold - get the range value corresponding to a given domain value.\nthreshold.invertExtent - get the domain values for the specified range value.\nthreshold.domain - get or set the scale's input domain.\nthreshold.range - get or set the scale's output range (as discrete values).\nthreshold.copy - create a new scale from an existing scale.\nd3.scale.quantile - construct a quantitative scale mapping to quantiles.\nquantile - get the range value corresponding to a given domain value.\nquantile.invertExtent - get the domain values for the specified range value.\nquantile.domain - get or set the scale's input domain (as discrete values).\nquantile.range - get or set the scale's output range (as discrete values).\nquantile.quantiles - get the scale's quantile bin thresholds.\nquantile.copy - create a new scale from an existing scale.\nd3.scale.identity - construct a linear identity scale.\nidentity - the identity function.\nidentity.invert - equivalent to identity; the identity function.\nidentity.domain - get or set the scale's domain and range.\nidentity.range - equivalent to identity.domain.\nidentity.ticks - get representative values from the domain.\nidentity.tickFormat - get a formatter for displaying tick values.\nidentity.copy - create a new scale from an existing scale.\nOrdinal\n\nd3.scale.ordinal - construct an ordinal scale.\nordinal - get the range value corresponding to a given domain value.\nordinal.domain - get or set the scale's input domain.\nordinal.range - get or set the scale's output range.\nordinal.rangePoints - divide a continuous output range for discrete points.\nordinal.rangeBands - divide a continuous output range for discrete bands.\nordinal.rangeRoundBands - divide a continuous output range for discrete bands.\nordinal.rangeBand - get the discrete range band width.\nordinal.rangeExtent - get the minimum and maximum values of the output range.\nordinal.copy - create a new scale from an existing scale.\nd3.scale.category10 - construct an ordinal scale with ten categorical colors.\nd3.scale.category20 - construct an ordinal scale with twenty categorical colors.\nd3.scale.category20b - construct an ordinal scale with twenty categorical colors.\nd3.scale.category20c - construct an ordinal scale with twenty categorical colors.\nd3.svg (SVG)\n\nShapes\n\nd3.svg.line - create a new line generator.\nline - generate a piecewise linear curve, as in a line chart.\nline.x - get or set the x-coordinate accessor.\nline.y - get or set the y-coordinate accessor.\nline.interpolate - get or set the interpolation mode.\nline.tension - get or set the cardinal spline tension.\nline.defined - control whether the line is defined at a given point.\nd3.svg.line.radial - create a new radial line generator.\nline - generate a piecewise linear curve, as in a polar line chart.\nline.radius - get or set the radius accessor.\nline.angle - get or set the angle accessor.\nline.defined - control whether the line is defined at a given point.\nd3.svg.area - create a new area generator.\narea - generate a piecewise linear area, as in an area chart.\narea.x - get or set the x-coordinate accessors.\narea.x0 - get or set the x0-coordinate (baseline) accessor.\narea.x1 - get or set the x1-coordinate (topline) accessor.\narea.y - get or set the y-coordinate accessors.\narea.y0 - get or set the y0-coordinate (baseline) accessor.\narea.y1 - get or set the y1-coordinate (topline) accessor.\narea.interpolate - get or set the interpolation mode.\narea.tension - get or set the cardinal spline tension.\narea.defined - control whether the area is defined at a given point.\nd3.svg.area.radial - create a new area generator.\narea - generate a piecewise linear area, as in a polar area chart.\narea.radius - get or set the radius accessors.\narea.innerRadius - get or set the inner radius (baseline) accessor.\narea.outerRadius - get or set the outer radius (topline) accessor.\narea.angle - get or set the angle accessors.\narea.startAngle - get or set the angle (baseline) accessor.\narea.endAngle - get or set the angle (topline) accessor.\narea.defined - control whether the area is defined at a given point.\nd3.svg.arc - create a new arc generator.\narc - generate a solid arc, as in a pie or donut chart.\narc.innerRadius - get or set the inner radius accessor.\narc.outerRadius - get or set the outer radius accessor.\narc.startAngle - get or set the start angle accessor.\narc.endAngle - get or set the end angle accessor.\narc.centroid - compute the arc centroid.\nd3.svg.symbol - create a new symbol generator.\nsymbol - generate categorical symbols, as in a scatterplot.\nsymbol.type - get or set the symbol type accessor.\nsymbol.size - get or set the symbol size (in square pixels) accessor.\nd3.svg.symbolTypes - the array of supported symbol types.\nd3.svg.chord - create a new chord generator.\nchord - generate a quadratic Bézier connecting two arcs, as in a chord diagram.\nchord.radius - get or set the arc radius accessor.\nchord.startAngle - get or set the arc start angle accessor.\nchord.endAngle - get or set the arc end angle accessor.\nchord.source - get or set the source arc accessor.\nchord.target - get or set the target arc accessor.\nd3.svg.diagonal - create a new diagonal generator.\ndiagonal - generate a two-dimensional Bézier connector, as in a node-link diagram.\ndiagonal.source - get or set the source point accessor.\ndiagonal.target - get or set the target point accessor.\ndiagonal.projection - get or set an optional point transform.\nd3.svg.diagonal.radial - create a new diagonal generator.\ndiagonal - generate a two-dimensional Bézier connector, as in a node-link diagram.\nAxes\n\nd3.svg.axis - create a new axis generator.\naxis - creates or updates an axis for the given selection or transition.\naxis.scale - get or set the axis scale.\naxis.orient - get or set the axis orientation.\naxis.ticks - control how ticks are generated for the axis.\naxis.tickValues - specify tick values explicitly.\naxis.tickSubdivide - optionally subdivide ticks uniformly.\naxis.tickSize - specify the size of major, minor and end ticks.\naxis.tickPadding - specify padding between ticks and tick labels.\naxis.tickFormat - override the tick formatting for labels.\nControls\n\nd3.svg.brush - click and drag to select one- or two-dimensional regions.\nbrush - creates or updates a brush for the given selection or transition.\nbrush.x - get or set the brush’s x-scale.\nbrush.y - get or set the brush’s y-scale.\nbrush.extent - get or set the brush’s extent.\nbrush.clear - reset the brush extent.\nbrush.empty - returns true if the brush extent is empty.\nbrush.on - respond to events when the brush is moved.\nd3.time (Time)\n\nTime Formatting\n\nd3.time.format - create a new local time formatter for a given specifier.\nformat - format a date into a string.\nformat.parse - parse a string into a date.\nd3.time.format.utc - create a new UTC time formatter for a given specifier.\nd3.time.format.iso - the ISO 8601 UTC time formatter.\nTime Scales\n\nd3.time.scale - construct a linear time scale.\nscale - get the range value corresponding to a given domain value.\nscale.invert - get the domain value corresponding to a given range value.\nscale.domain - get or set the scale's input domain.\nscale.nice - extend the scale domain to nice round numbers.\nscale.range - get or set the scale's output range.\nscale.rangeRound - set the scale's output range, and enable rounding.\nscale.interpolate - get or set the scale's output interpolator.\nscale.clamp - enable or disable clamping of the output range.\nscale.ticks - get representative values from the input domain.\nscale.tickFormat - get a formatter for displaying tick values.\nscale.copy - create a new scale from an existing scale.\nTime Intervals\n\nd3.time.interval - a time interval in local time.\ninterval - alias for interval.floor.\ninterval.range - returns dates within the specified range.\ninterval.floor - rounds down to the nearest interval.\ninterval.round - rounds up or down to the nearest interval.\ninterval.ceil - rounds up to the nearest interval.\ninterval.offset - returns a date offset by some interval.\ninterval.utc - returns the UTC-equivalent time interval.\nd3.time.day - every day (12:00 AM).\nd3.time.days - alias for day.range.\nd3.time.dayOfYear - computes the day number.\nd3.time.hour - every hour (e.g., 1:00 AM).\nd3.time.hours - alias for hour.range.\nd3.time.minute - every minute (e.g., 1:02 AM).\nd3.time.minutes - alias for minute.range.\nd3.time.month - every month (e.g., February 1, 12:00 AM).\nd3.time.months - alias for month.range.\nd3.time.second - every second (e.g., 1:02:03 AM).\nd3.time.seconds - alias for second.range.\nd3.time.sunday - every Sunday (e.g., February 5, 12:00 AM).\nd3.time.sundays - alias for sunday.range.\nd3.time.sundayOfYear - computes the sunday-based week number.\nd3.time.monday - every Monday (e.g., February 5, 12:00 AM).\nd3.time.mondays - alias for monday.range.\nd3.time.mondayOfYear - computes the monday-based week number.\nd3.time.tuesday - every Tuesday (e.g., February 5, 12:00 AM).\nd3.time.tuesdays - alias for tuesday.range.\nd3.time.tuesdayOfYear - computes the tuesday-based week number.\nd3.time.wednesday - every Wednesday (e.g., February 5, 12:00 AM).\nd3.time.wednesdays - alias for wednesday.range.\nd3.time.wednesdayOfYear - computes the wednesday-based week number.\nd3.time.thursday - every Thursday (e.g., February 5, 12:00 AM).\nd3.time.thursdays - alias for thursday.range.\nd3.time.thursdayOfYear - computes the thursday-based week number.\nd3.time.friday - every Friday (e.g., February 5, 12:00 AM).\nd3.time.fridays - alias for friday.range.\nd3.time.fridayOfYear - computes the friday-based week number.\nd3.time.saturday - every Saturday (e.g., February 5, 12:00 AM).\nd3.time.saturdays - alias for saturday.range.\nd3.time.saturdayOfYear - computes the saturday-based week number.\nd3.time.week - alias for sunday.\nd3.time.weeks - alias for sunday.range.\nd3.time.weekOfYear - alias for sundayOfYear.\nd3.time.year - every year (e.g., January 1, 12:00 AM).\nd3.time.years - alias for year.range.\nd3.layout (Layouts)\n\nBundle\n\nd3.layout.bundle - construct a new default bundle layout.\nbundle - apply Holten's hierarchical bundling algorithm to edges.\nChord\n\nd3.layout.chord - produce a chord diagram from a matrix of relationships.\nchord.matrix - get or set the matrix data backing the layout.\nchord.padding - get or set the angular padding between chord segments.\nchord.sortGroups - get or set the comparator function for groups.\nchord.sortSubgroups - get or set the comparator function for subgroups.\nchord.sortChords - get or set the comparator function for chords (z-order).\nchord.chords - retrieve the computed chord angles.\nchord.groups - retrieve the computed group angles.\nCluster\n\nd3.layout.cluster - cluster entities into a dendrogram.\ncluster.sort - get or set the comparator function for sibling nodes.\ncluster.children - get or set the accessor function for child nodes.\ncluster.nodes - compute the cluster layout and return the array of nodes.\ncluster.links - compute the parent-child links between tree nodes.\ncluster.separation - get or set the spacing function between neighboring nodes.\ncluster.size - get or set the layout size in x and y.\nForce\n\nd3.layout.force - position linked nodes using physical simulation.\nforce.on - listen to updates in the computed layout positions.\nforce.nodes - get or set the array of nodes to layout.\nforce.links - get or set the array of links between nodes.\nforce.size - get or set the layout size in x and y.\nforce.linkDistance - get or set the link distance.\nforce.linkStrength - get or set the link strength.\nforce.friction - get or set the friction coefficient.\nforce.charge - get or set the charge strength.\nforce.gravity - get or set the gravity strength.\nforce.theta - get or set the accuracy of the charge interaction.\nforce.start - start or restart the simulation when the nodes change.\nforce.resume - reheat the cooling parameter and restart simulation.\nforce.stop - immediately terminate the simulation.\nforce.alpha - get or set the layout's cooling parameter.\nforce.tick - run the layout simulation one step.\nforce.drag - bind a behavior to nodes to allow interactive dragging.\nHierarchy\n\nd3.layout.hierarchy - derive a custom hierarchical layout implementation.\nhierarchy.sort - get or set the comparator function for sibling nodes.\nhierarchy.children - get or set the accessor function for child nodes.\nhierarchy.nodes - compute the layout and return the array of nodes.\nhierarchy.links - compute the parent-child links between tree nodes.\nhierarchy.value - get or set the value accessor function.\nhierarchy.revalue - recompute the hierarchy values.\nHistogram\n\nd3.layout.histogram - construct a new default histogram layout.\nhistogram - compute the distribution of data using quantized bins.\nhistogram.value - get or set the value accessor function.\nhistogram.range - get or set the considered value range.\nhistogram.bins - specify how values are organized into bins.\nhistogram.frequency - compute the distribution as counts or probabilities.\nPack\n\nd3.layout.pack - produce a hierarchical layout using recursive circle-packing.\npack.sort - control the order in which sibling nodes are traversed.\npack.children - get or set the children accessor function.\npack.nodes - compute the pack layout and return the array of nodes.\npack.links - compute the parent-child links between tree nodes.\npack.value - get or set the value accessor used to size circles.\npack.size - specify the layout size in x and y.\npack.radius - specify the node radius, rather than deriving it from value.\npack.padding - specify the layout padding in (approximate) pixels.\nPartition\n\nd3.layout.partition - recursively partition a node tree into a sunburst or icicle.\npartition.sort - control the order in which sibling nodes are traversed.\npartition.children - get or set the children accessor function.\npartition.nodes - compute the partition layout and return the array of nodes.\npartition.links - compute the parent-child links between tree nodes.\npartition.value - get or set the value accessor used to size circles.\npartition.size - specify the layout size in x and y.\nPie\n\nd3.layout.pie - construct a new default pie layout.\npie - compute the start and end angles for arcs in a pie or donut chart.\npie.value - get or set the value accessor function.\npie.sort - control the clockwise order of pie slices.\npie.startAngle - get or set the overall start angle of the pie.\npie.endAngle - get or set the overall end angle of the pie.\nStack\n\nd3.layout.stack - construct a new default stack layout.\nstack - compute the baseline for each series in a stacked bar or area chart.\nstack.values - get or set the values accessor function per series.\nstack.order - control the order in which series are stacked.\nstack.offset - specify the overall baseline algorithm.\nstack.x - get or set the x-dimension accessor function.\nstack.y - get or set the y-dimension accessor function.\nstack.out - get or set the output function for storing the baseline.\nTree\n\nd3.layout.tree - position a tree of nodes tidily.\ntree.sort - control the order in which sibling nodes are traversed.\ntree.children - get or set the children accessor function.\ntree.nodes - compute the tree layout and return the array of nodes.\ntree.links - compute the parent-child links between tree nodes.\ntree.separation - get or set the spacing function between neighboring nodes.\ntree.size - specify the layout size in x and y.\nTreemap\n\nd3.layout.treemap - use recursive spatial subdivision to display a tree of nodes.\ntreemap.sort - control the order in which sibling nodes are traversed.\ntreemap.children - get or set the children accessor function.\ntreemap.nodes - compute the treemap layout and return the array of nodes.\ntreemap.links - compute the parent-child links between tree nodes.\ntreemap.value - get or set the value accessor used to size treemap cells.\ntreemap.size - specify the layout size in x and y.\ntreemap.padding - specify the padding between a parent and its children.\ntreemap.round - enable or disable rounding to exact pixels.\ntreemap.sticky - make the layout sticky for stable updates.\ntreemap.mode - change the treemap layout algorithm.\nd3.geo (Geography)\n\nPaths\n\nd3.geo.path - create a new geographic path generator.\npath - project the specified feature and render it to the context.\npath.projection - get or set the geographic projection.\npath.context - get or set the render context.\npath.pointRadius - get or set the radius to display point features.\npath.area - compute the projected area of a given feature.\npath.centroid - compute the projected centroid of a given feature.\npath.bounds - compute the projected bounds of a given feature.\nd3.geo.circle - create a circle generator.\ncircle - generate a piecewise circle as a Polygon.\ncircle.origin - specify the origin in latitude and longitude.\ncircle.angle - specify the angular radius in degrees.\ncircle.precision - specify the precision of the piecewise circle.\nd3.geo.area - compute the spherical area of a given feature.\nd3.geo.bounds - compute the latitude-longitude bounding box for a given feature.\nd3.geo.centroid - compute the spherical centroid of a given feature.\nd3.geo.distance - compute the great-arc distance between two points.\nd3.geo.interpolate - interpolate between two points along a great arc.\nd3.geo.length - compute the length of a line string or the circumference of a polygon.\nd3.geo.rotation - create a rotation function for the specified angles [λ, φ, γ].\nrotation - rotate the given location around the sphere.\nrotation.invert - inverse-rotate the given location around the sphere.\nProjections\n\nd3.geo.projection - create a standard projection from a raw projection.\nprojection - project the specified location.\nprojection.invert - invert the projection for the specified point.\nprojection.rotate - get or set the projection’s three-axis rotation.\nprojection.center - get or set the projection’s center location.\nprojection.translate - get or set the projection’s translation position.\nprojection.scale - get or set the projection’s scale factor.\nprojection.clipAngle - get or set the radius of the projection’s clip circle.\nprojection.clipExtent - get or set the projection’s viewport clip extent, in pixels.\nprojection.precision - get or set the precision threshold for adaptive resampling.\nprojection.stream - wrap the specified stream listener, projecting input geometry.\nd3.geo.projectionMutator - create a standard projection from a mutable raw projection.\nd3.geo.albers - the Albers equal-area conic projection.\nalbers.parallels - get or set the projection's two standard parallels.\nd3.geo.albersUsa - a composite Albers projection for the United States.\nd3.geo.azimuthalEqualArea - the azimuthal equal-area projection.\nd3.geo.azimuthalEquidistant - the azimuthal equidistant projection.\nd3.geo.conicConformal - the conic conformal projection.\nd3.geo.conicEquidistant - the conic equidistant projection.\nd3.geo.conicEqualArea the conic equal-area (a.k.a. Albers) projection.\nd3.geo.equirectangular - the equirectangular (plate carreé) projection.\nd3.geo.gnomonic - the gnomonic projection.\nd3.geo.mercator - the spherical Mercator projection.\nd3.geo.orthographic - the azimuthal orthographic projection.\nd3.geo.stereographic - the azimuthal stereographic projection.\nd3.geo.azimuthalEqualArea.raw - the raw azimuthal equal-area projection.\nd3.geo.azimuthalEquidistant.raw - the azimuthal equidistant projection.\nd3.geo.conicConformal.raw - the raw conic conformal projection.\nd3.geo.conicEquidistant.raw - the raw conic equidistant projection.\nd3.geo.conicEqualArea.raw the raw conic equal-area (a.k.a. Albers) projection.\nd3.geo.equirectangular.raw - the raw equirectangular (plate carrée) projection.\nd3.geo.gnomonic.raw - the raw gnomonic projection.\nd3.geo.mercator.raw - the raw Mercator projection.\nd3.geo.orthographic.raw - the raw azimuthal orthographic projection.\nd3.geo.stereographic.raw - the raw azimuthal stereographic projection.\nd3.geo.transverseMercator.raw - the raw transverse Mercator projection.\nStreams\n\nd3.geo.stream - convert a GeoJSON object to a geometry stream.\nstream.point - indicate an x, y (and optionally z) coordinate.\nstream.lineStart - indicate the start of a line or ring.\nstream.lineEnd - indicate the end of a line or ring.\nstream.polygonStart - indicate the start of a polygon.\nstream.polygonEnd - indicate the end of a polygon.\nstream.sphere - indicate a sphere.\nd3.geom (Geometry)\n\nVoronoi\n\nd3.geom.voronoi - create a Voronoi layout with default accessors.\nvoronoi - compute the Voronoi tessellation for the specified points.\nvoronoi.x - get or set the x-coordinate accessor for each point.\nvoronoi.y - get or set the y-coordinate accessor for each point.\nvoronoi.clipExent - get or set the clip extent for the tesselation.\nvoronoi.links - compute the Delaunay mesh as a network of links.\nvoronoi.triangles - compute the Delaunay mesh as a triangular tessellation.\nQuadtree\n\nd3.geom.quadtree - constructs a quadtree for an array of points.\nquadtree.add - add a point to the quadtree.\nquadtree.visit - recursively visit nodes in the quadtree.\nPolygon\n\nd3.geom.polygon - create a polygon from the specified array of points.\npolygon.area - compute the counterclockwise area of this polygon.\npolygon.centroid - compute the area centroid of this polygon.\npolygon.clip - clip the specified polygon to this polygon.\nHull\n\nd3.geom.hull - create a convex hull layout with default accessors.\nhull - compute the convex hull for the given array of points.\nhull.x - get or set the x-coordinate accessor.\nhull.y - get or set the y-coordinate accessor.\nd3.behavior (Behaviors)\n\nDrag\n\nd3.behavior.drag\ndrag.origin\ndrag.on\nZoom\n\nd3.behavior.zoom\nzoom.on\nzoom.scale\nzoom.translate\nzoom.scaleExtent\nzoom.x\nzoom.y\nLast edited by Emrouz, 22 days ago\nStatus API Training Shop Blog About © 2013 GitHub, Inc. Terms Privacy Security Contact 12",
+			"file": "d3.api",
+			"file_size": 35955,
+			"file_write_time": 130203340192426434,
 			"settings":
 			{
-				"buffer_size": 3211,
-				"line_ending": "Unix"
+				"buffer_size": 35228,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "d3.js",
+			"settings":
+			{
+				"buffer_size": 255328,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.js",
+			"settings":
+			{
+				"buffer_size": 2227,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 334.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -91,6 +155,7 @@
 	},
 	"file_history":
 	[
+		"/D/project/storyline/backup",
 		"/D/project/algorithm/topcoder/main.cpp",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/D/用户目录/Documents/temp/storyline.js"
@@ -111,6 +176,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"topic",
+			"int",
+			"color",
+			"\n  ",
+			"sy",
 			"scaleComponents",
 			"computeTopicPeopleOrder",
 			"initalLinks",
@@ -137,7 +207,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -145,15 +215,15 @@
 					"file": "storyline.js",
 					"settings":
 					{
-						"buffer_size": 4690,
+						"buffer_size": 5952,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3095,
-								3095
+								3984,
+								3984
 							]
 						],
 						"settings":
@@ -163,13 +233,153 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1852.0,
+						"translation.y": 2565.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2233,
+								2233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2128.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "stroydata.js",
+					"settings":
+					{
+						"buffer_size": 617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "backup.js",
+					"settings":
+					{
+						"buffer_size": 2574,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								621,
+								621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "data.json",
+					"settings":
+					{
+						"buffer_size": 598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								598
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sankey.js",
+					"settings":
+					{
+						"buffer_size": 7371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "d3.api",
 					"settings":
 					{
@@ -190,30 +400,30 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4028.0,
+						"translation.y": 190.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "data.json",
+					"buffer": 7,
+					"file": "d3.js",
 					"settings":
 					{
-						"buffer_size": 598,
+						"buffer_size": 255328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								559,
-								559
+								424,
+								424
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -224,19 +434,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "sankey.js",
+					"buffer": 8,
+					"file": "test.js",
 					"settings":
 					{
-						"buffer_size": 7371,
+						"buffer_size": 2227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5455,
-								5455
+								0,
+								0
 							]
 						],
 						"settings":
@@ -246,35 +456,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3632.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 3211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								948,
-								918
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 774.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
