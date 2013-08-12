@@ -1,3 +1,5 @@
+
+var storydata = {"people":[
   {"name":"test1"},
   {"name":"test2"},
   {"name":"test3"},
